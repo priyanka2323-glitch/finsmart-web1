@@ -1,0 +1,142 @@
+.header {
+  position: fixed;
+  top: 0; left: 260px; right: 0;
+  height: 64px;
+  background: rgba(10,10,15,0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  z-index: 50;
+}
+.left { display:flex; align-items:center; gap:16px; }
+.title { font-size:22px; font-weight:700; letter-spacing:-0.02em; color:var(--text-primary); }
+.right { display:flex; align-items:center; gap:12px; }
+
+/* Bell button */
+.iconBtn {
+  width:40px; height:40px;
+  border-radius:var(--radius-sm);
+  display:flex; align-items:center; justify-content:center;
+  color:var(--text-muted);
+  transition:all 0.2s;
+  position:relative;
+  cursor:pointer;
+  background:none; border:none;
+}
+.iconBtn:hover { background:var(--bg-card); color:var(--text-primary); }
+
+.notifBadge {
+  position:absolute; top:6px; right:6px;
+  min-width:16px; height:16px;
+  border-radius:8px;
+  background:var(--expense);
+  color:#fff;
+  font-size:10px; font-weight:700;
+  display:flex; align-items:center; justify-content:center;
+  padding:0 3px;
+  line-height:1;
+}
+
+/* Notification panel */
+.notifWrap { position:relative; }
+
+.notifPanel {
+  position:absolute;
+  top:calc(100% + 10px);
+  right:0;
+  width:360px;
+  background:var(--bg-secondary);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  box-shadow:var(--shadow-lg);
+  z-index:200;
+  animation:slideDown 0.2s ease;
+  overflow:hidden;
+}
+
+.panelHeader {
+  display:flex; align-items:center; justify-content:space-between;
+  padding:16px 20px 12px;
+  border-bottom:1px solid var(--border);
+}
+.panelTitle { font-size:15px; font-weight:700; color:var(--text-primary); }
+.markAllBtn {
+  display:flex; align-items:center; gap:5px;
+  font-size:12px; color:var(--accent-light); font-weight:500;
+  background:none; border:none; cursor:pointer;
+  transition:color 0.2s;
+}
+.markAllBtn:hover { color:var(--accent); }
+
+.notifList { max-height:400px; overflow-y:auto; }
+
+.notifItem {
+  display:flex; align-items:flex-start; gap:12px;
+  padding:14px 16px;
+  border-bottom:1px solid var(--border);
+  cursor:pointer;
+  transition:background 0.15s;
+  position:relative;
+}
+.notifItem:last-child { border-bottom:none; }
+.notifItem:hover { background:var(--bg-card); }
+.notifUnread { background:rgba(16,185,129,0.04); }
+.notifUnread::before {
+  content:'';
+  position:absolute; left:0; top:0; bottom:0;
+  width:3px;
+  background:var(--accent);
+  border-radius:0 2px 2px 0;
+}
+
+.notifIcon {
+  width:34px; height:34px; border-radius:10px; flex-shrink:0;
+  display:flex; align-items:center; justify-content:center;
+}
+.notifContent { flex:1; min-width:0; }
+.notifTitle { font-size:13px; font-weight:600; color:var(--text-primary); margin-bottom:2px; }
+.notifBody { font-size:12px; color:var(--text-muted); line-height:1.4; margin-bottom:4px; }
+.notifTime { font-size:11px; color:var(--text-muted); opacity:0.7; }
+.notifDismiss {
+  width:20px; height:20px; border-radius:4px; flex-shrink:0;
+  display:flex; align-items:center; justify-content:center;
+  color:var(--text-muted); background:none; border:none; cursor:pointer;
+  opacity:0; transition:opacity 0.2s;
+}
+.notifItem:hover .notifDismiss { opacity:1; }
+.notifDismiss:hover { background:var(--bg-card); color:var(--text-primary); }
+
+.emptyNotif { padding:32px; text-align:center; color:var(--text-muted); font-size:14px; }
+
+/* User pill */
+.userPill {
+  display:flex; align-items:center; gap:10px;
+  padding:5px 14px 5px 5px;
+  border-radius:var(--radius-full);
+  background:var(--bg-card);
+  border:1px solid var(--border);
+  transition:all 0.2s;
+  cursor:pointer;
+  background:none;
+}
+.userPill:hover { border-color:var(--border-hover); background:var(--bg-card); }
+
+.avatar {
+  width:32px; height:32px; border-radius:50%;
+  background:linear-gradient(135deg,var(--accent-dark),var(--accent));
+  display:flex; align-items:center; justify-content:center;
+  color:#fff; flex-shrink:0;
+}
+.avatarImg { width:32px; height:32px; border-radius:50%; object-fit:cover; }
+.userName { font-size:13px; font-weight:600; color:var(--text-primary); }
+
+@media (max-width:768px) {
+  .header { left:0; padding:0 16px 0 60px; }
+  .title { font-size:18px; }
+  .userName { display:none; }
+  .notifPanel { width:calc(100vw - 32px); right:-16px; }
+}

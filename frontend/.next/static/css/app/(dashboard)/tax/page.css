@@ -1,0 +1,273 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./src/app/(dashboard)/tax/tax.module.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************/
+.tax_page__CsK69 {
+  animation: tax_fadeIn__HfbwV 0.3s ease;
+}
+
+.tax_layout__z5_pE {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.tax_formSection__lubeF {
+  position: sticky;
+  top: 80px;
+}
+
+.tax_formHeader__U3Ykt {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.tax_formIcon__DYD_4 {
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--accent), var(--accent-dark));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  box-shadow: var(--shadow-accent);
+  flex-shrink: 0;
+}
+
+.tax_formTitle__TOwkB {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+.tax_formSubtitle__IKY6H {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.tax_form__VG5Pu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tax_section__U4qDa {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.tax_sectionLabel__8O941 {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding-bottom: 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.tax_fieldGrid__SRSEG {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.tax_inputWrap__sa7ew {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.tax_inputPrefix__4u8V9 {
+  position: absolute;
+  left: 14px;
+  color: var(--text-muted);
+  font-size: 14px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.tax_inputWithPrefix__g_pZp {
+  padding-left: 28px;
+}
+
+.tax_checkboxLabel__pL66a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.tax_checkbox__CMNmf {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.tax_limit__1wpJi {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+/* Results */
+.tax_resultsSection__xtfcl {
+  min-height: 400px;
+}
+
+.tax_results__lql47 {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tax_recommendation__aWNin {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 18px 20px;
+  border-radius: var(--radius);
+  border: 1px solid;
+}
+
+.tax_recNew__VlKYN {
+  background: var(--accent-glow);
+  border-color: var(--border-accent);
+  color: var(--accent-light);
+}
+
+.tax_recOld__ajWFY {
+  background: var(--savings-bg);
+  border-color: rgba(96, 165, 250, 0.3);
+  color: var(--savings);
+}
+
+.tax_recTitle__1_hiO {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.tax_recSub__i4zEl {
+  font-size: 13px;
+  opacity: 0.8;
+}
+
+.tax_regimeGrid__PdFxM {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.tax_regimeCard__wdc8O {
+  position: relative;
+  overflow: visible;
+}
+
+.tax_regimeBest__qYuzR {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 1px var(--accent), var(--shadow-accent);
+}
+
+.tax_bestBadge__E9QOW {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 12px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.tax_regimeTitle__f4PMa {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.tax_regimeTax__c8AK8 {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
+
+.tax_regimeLabel__6cC6T {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.tax_divider__0tgqh {
+  height: 1px;
+  background: var(--border);
+  margin: 14px 0;
+}
+
+.tax_regimeDetails__HsRhe {
+  display: flex;
+  flex-direction: column;
+}
+
+.tax_breakdownTitle__b0mL_ {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.tax_infoBox__0rB_B {
+  display: flex;
+  gap: 8px;
+  align-items: flex-start;
+  padding: 12px;
+  background: var(--bg-card);
+  border-radius: var(--radius-xs);
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.tax_infoBox__0rB_B svg {
+  flex-shrink: 0;
+  margin-top: 1px;
+  color: var(--accent);
+}
+
+@media (max-width: 1200px) {
+  .tax_layout__z5_pE {
+    grid-template-columns: 1fr;
+  }
+  .tax_formSection__lubeF {
+    position: static;
+  }
+  .tax_fieldGrid__SRSEG {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .tax_regimeGrid__PdFxM {
+    grid-template-columns: 1fr;
+  }
+}
+
