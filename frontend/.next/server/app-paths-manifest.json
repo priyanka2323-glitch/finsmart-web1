@@ -1,12 +1,1 @@
-{
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/(dashboard)/transactions/page": "app/(dashboard)/transactions/page.js",
-  "/(dashboard)/tax/page": "app/(dashboard)/tax/page.js",
-  "/(landing)/page": "app/(landing)/page.js",
-  "/(dashboard)/dashboard/page": "app/(dashboard)/dashboard/page.js",
-  "/(dashboard)/reports/page": "app/(dashboard)/reports/page.js",
-  "/(landing)/signup/page": "app/(landing)/signup/page.js",
-  "/(dashboard)/bills/page": "app/(dashboard)/bills/page.js",
-  "/(dashboard)/notifications/page": "app/(dashboard)/notifications/page.js",
-  "/(dashboard)/profile/page": "app/(dashboard)/profile/page.js"
-}
+{}

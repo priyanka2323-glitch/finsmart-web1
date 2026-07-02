@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/6.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-dbu6%1y^t!2z*xgwjd=aih10!xfdhw6=c4b8myh^1jpnyp!k18'
+SECRET_KEY = config("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -120,14 +120,17 @@ WSGI_APPLICATION = 'finsmart.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
+    
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'Finsmart',
         'USER': 'postgres',
-        'PASSWORD': 'postgres123',
+        'PASSWORD': 'luffyking@101',
         'HOST': 'localhost',
         'PORT': 5432,
     }
+
+    
 }
 
 
@@ -166,6 +169,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
