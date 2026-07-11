@@ -82,7 +82,7 @@ export default function ProfilePage() {
     if (!confirm('Last chance — this cannot be undone.')) return;
     setDeleting(true);
     try {
-      await fetch(`${process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000'}/auth/delete/`, {
+      await fetch(`/api/proxy/auth/delete/`, {
         method: 'DELETE',
         headers: { Authorization: `Bearer ${token}` },
       });

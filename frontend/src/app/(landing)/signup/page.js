@@ -6,7 +6,7 @@ import { useRouter } from 'next/navigation';
 import { Diamond, Eye, EyeOff, ArrowRight, Loader2 } from 'lucide-react';
 import Link from 'next/link';
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const BASE_URL = '/api/proxy';
 
 export default function SignupPage() {
   const { status } = useSession();

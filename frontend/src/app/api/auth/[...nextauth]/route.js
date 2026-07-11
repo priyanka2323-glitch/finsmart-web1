@@ -2,7 +2,7 @@ import NextAuth from 'next-auth';
 import GoogleProvider from 'next-auth/providers/google';
 import CredentialsProvider from 'next-auth/providers/credentials';
 
-const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'https://finsmart-web1.onrender.com';
 
 function decodeJwtExpiry(token) {
   if (!token) return null;
@@ -144,4 +144,8 @@ export const authOptions = {
 };
 
 const handler = NextAuth(authOptions);
+//temporary login issue fix for deploinhg to vercel
+console.log("NEXTAUTH_SECRET:", process.env.NEXTAUTH_SECRET);
+console.log("NEXTAUTH_URL:", process.env.NEXTAUTH_URL);
+console.log("NEXT_PUBLIC_API_URL:", process.env.NEXT_PUBLIC_API_URL);
 export { handler as GET, handler as POST };
